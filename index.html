@@ -26,9 +26,7 @@
       new Twitch.Embed("twitch-embed", {
         width: 854,
         height: 480,
-        channel: "tehonebrutus",
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-        parent: ["localhost"]
+        channel: "tehonebrutus"
       });
         
         new Twitch.Embed("twitch-embed2", {
@@ -38,6 +36,10 @@
         // only needed if your site is also embedded on embed.example.com and othersite.example.com 
         parent: ["localhost"]
       });
+        
+        var player = embed.getPlayer();
+
+            player.setMuted(false);
     </script>
 </body>
 </html>
